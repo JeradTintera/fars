@@ -28,6 +28,6 @@ that matches \code{year}. This function will also raise an error
 if the \code{state.num} doesn't match a number from the data.
 }
 \examples{
-\\code{fars_map_state(36,'2013')}
+fars_map_state(36,'2013')
 
 }

@@ -18,6 +18,6 @@ This function returns a file name as a character string.
 and returns a file name as a character string.
 }
 \examples{
-\\code{filename <- make_file('2013')}
-\\code{filename}
+filename <- make_file('2013')
+{filename}
 }

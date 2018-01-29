@@ -24,7 +24,7 @@ This function will raise an error if there is no file
 that matches the year in \code{years}.
 }
 \examples{
-\\code{years <- c('2013', '2014')}
-\\code{accident_summary <- fars_summarize_years(years)}
+years <- c('2013', '2014')
+accident_summary <- fars_summarize_years(years)
 
 }

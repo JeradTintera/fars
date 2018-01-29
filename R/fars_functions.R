@@ -13,8 +13,8 @@
 #'@importFrom readr read_csv
 #'@importFrom dplyr tbl_df
 #'
-#'@examples \code{df <- fars_read(file)}
-#'\code{head(df)}
+#'@examples df <- fars_read(file)
+#'head(df)
 
 
 fars_read <- function(filename) {
@@ -36,8 +36,8 @@ fars_read <- function(filename) {
 #'
 #'@return This function returns a file name as a character string.
 #'
-#'@examples \code{filename <- make_file('2013')}
-#'\code{filename}
+#'@examples filename <- make_file('2013')
+#'{filename}
 
 make_filename <- function(year) {
         year <- as.integer(year)
@@ -61,8 +61,8 @@ make_filename <- function(year) {
 #'@importfrom dplyr mutate select
 #'@importFrom magrittr %>%
 #'
-#'@examples \code{years <- c('2013', '2014')}
-#'\code{years_vector <- fars_read_years(years)}
+#'@examples years <- c('2013', '2014')
+#'years_vector <- fars_read_years(years)
 
 fars_read_years <- function(years) {
         lapply(years, function(year) {
@@ -97,8 +97,8 @@ fars_read_years <- function(years) {
 #'@importFrom tidyr spread
 #'@importFrom magrittr %>%
 #'
-#'@examples \code{years <- c('2013', '2014')}
-#'\code{accident_summary <- fars_summarize_years(years)}
+#'@examples years <- c('2013', '2014')
+#'accident_summary <- fars_summarize_years(years)
 #'
 #'@export
 
@@ -133,7 +133,7 @@ fars_summarize_years <- function(years) {
 #'@importFrom maps map
 #'@importFrom graphics points
 #'
-#'@examples \code{fars_map_state(36,'2013')}
+#'@examples fars_map_state(36,'2013')
 #'
 #'@export
 

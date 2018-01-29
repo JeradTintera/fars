@@ -23,6 +23,6 @@ This function will raise an error if there is no file
 that matches the year in \code{years}.
 }
 \examples{
-\\code{years <- c('2013', '2014')}
-\\code{years_vector <- fars_read_years(years)}
+years <- c('2013', '2014')
+years_vector <- fars_read_years(years)
 }

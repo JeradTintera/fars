@@ -21,6 +21,6 @@ This function will raise an error if the file referenced
 in \code{filename} doesn't exist.
 }
 \examples{
-\\code{df <- fars_read(file)}
-\\code{head(df)}
+df <- fars_read(file)
+head(df)
 }
