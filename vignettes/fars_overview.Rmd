@@ -1,0 +1,33 @@
+---
+title: "FARS Package Overview"
+author: "Jerad Tintera"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,eval = FALSE)
+```
+
+## Fatality Analysis Reporting System (FARS)
+
+This is a document higlighting the functionality of the FARS package. The functions included with this package allow you to summarize data from FARS and plot accident data on a map.
+
+## Summarizing data
+
+You can use **fars_summarize_years** to summarize accident data for a selection of years. The function takes a vector of years and returns a dataframe with the number of accidents summarized by year and month.
+
+```{r}
+fars_summary <- fars_summarize_years(c('2013','2014','2015'))
+```
+
+## Plotting accidents on a map
+
+You can use **fars_map_state** to plot accident data for a specific state and year on a map. The function takes a state code and year and plots accident locations on a map.
+
+```{r}
+fars_map_state(23,'2015')
+```
