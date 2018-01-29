@@ -41,7 +41,7 @@ fars_read <- function(filename) {
 
 make_filename <- function(year) {
         year <- as.integer(year)
-        sprintf("accident_%d.csv.bz2", year)
+        system.file('extdata',sprintf("accident_%d.csv.bz2", year),package="fars")
 }
 
 #'Retrieve a selection of data from FARS files.

@@ -9,7 +9,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE,eval = FALSE)
+knitr::opts_chunk$set(echo = TRUE,eval = TRUE)
 ```
 
 ## Fatality Analysis Reporting System (FARS)
@@ -21,7 +21,8 @@ This is a document higlighting the functionality of the FARS package. The functi
 You can use **fars_summarize_years** to summarize accident data for a selection of years. The function takes a vector of years and returns a dataframe with the number of accidents summarized by year and month.
 
 ```{r}
-fars_summary <- fars_summarize_years(c('2013','2014','2015'))
+library(fars)
+fars_summarize_years(c('2013','2014','2015'))
 ```
 
 ## Plotting accidents on a map
