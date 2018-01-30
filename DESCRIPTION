@@ -16,4 +16,5 @@ Imports: magrittr,
     tidyr,
     maps,
     readr,
-    graphics
+    graphics,
+    testthat
