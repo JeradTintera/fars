@@ -17,7 +17,3 @@ This function returns a file name as a character string.
 \code{make_file} takes in a character string referencing a year
 and returns a file name as a character string.
 }
-\examples{
-filename <- make_file('2013')
-{filename}
-}

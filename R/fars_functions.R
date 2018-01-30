@@ -12,9 +12,6 @@
 #'
 #'@importFrom readr read_csv
 #'@importFrom dplyr tbl_df
-#'
-#'@examples df <- fars_read(file)
-#'head(df)
 
 
 fars_read <- function(filename) {
@@ -35,9 +32,6 @@ fars_read <- function(filename) {
 #'four-digit format (i.e. 2013).
 #'
 #'@return This function returns a file name as a character string.
-#'
-#'@examples filename <- make_file('2013')
-#'{filename}
 
 make_filename <- function(year) {
         year <- as.integer(year)
@@ -60,9 +54,6 @@ make_filename <- function(year) {
 #'
 #'@importfrom dplyr mutate select
 #'@importFrom magrittr %>%
-#'
-#'@examples years <- c('2013', '2014')
-#'years_vector <- fars_read_years(years)
 
 fars_read_years <- function(years) {
         lapply(years, function(year) {

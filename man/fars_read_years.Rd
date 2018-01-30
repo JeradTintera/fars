@@ -22,7 +22,3 @@ the month and year of every accident in the corresponding year.
 This function will raise an error if there is no file
 that matches the year in \code{years}.
 }
-\examples{
-years <- c('2013', '2014')
-years_vector <- fars_read_years(years)
-}

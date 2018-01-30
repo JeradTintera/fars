@@ -20,7 +20,3 @@ dataframe
 This function will raise an error if the file referenced
 in \code{filename} doesn't exist.
 }
-\examples{
-df <- fars_read(file)
-head(df)
-}
